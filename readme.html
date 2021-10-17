@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Readme</title>
+</head>
+<body>
+<h1 style="color:blue;" align="center"> Readme of final project</h1>
+<h1 style="color:blue;" align="center"> Study of simulation of movement according to social preference</h1>
+<div style="color:green;">
+<h3>Student name: Ester Boteach</h3>
+<h3>Email: estersha@edu.hac.ac.il</h3>
+<h3>Student id: 322667296</h3>
+<br>
+<h3>Student name: Shira Sina</h3>
+<h3>Email: shirasin@edu.hac.ac.il</h3>
+<h3>Student id: 322683368</h3>
+</div>
+<h4> The program expects input of a csv file from the user.<br>
+The program opens the file, reads it and uses the information to build the list of lanes.<br>
+The information in the file is displayed as follows:<br>
+Lane name , number of vehicles , social priority<br>
+<br>
+The program initializes the lanes in the SmartJunction class, <br>
+    thus building the smart junction divided into sides of conflict (explained in the attached presentation)<br>
+The junction object is then sent to the ClearJunction class whose job is to clear the node taking into account the:<br>
+    value of starvation, the load of vehicles, and of course the value of social priority.<br>
+The selected side receives a green light for a fixed time and during this time vehicles cross the junction.<br>
+<br>
+The calculation is done as follows: <br>First check if there is a starving side.<br>
+If there is - it is selected, if there is not - calculate for each part the following calculation:<br>
+Quantity of vehicles * Priority + value of hunger<br>
+The side with the maximum calculation is selected to receive a green light, and so on until the junction is evacuated.</h4>
+
+</body>
+</html>
